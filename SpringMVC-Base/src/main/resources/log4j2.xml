@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+    <Appenders>
+        <!-- 输出到控制台的配置 -->
+        <Console name="stdout" target="SYSTEM_OUT">
+            <!-- 输出格式 -->
+            <PatternLayout pattern="%highlight{[%-5p][%sn][%d][%-8t](%F:%L)[%m]} %n"/>
+        </Console>
+    </Appenders>
+
+    <Loggers>
+        <!--org.springframework.core 包的日志级别为 info -->
+        <logger name="org.springframework.core" level="info"/>
+        <!-- 配置记录器级别 -->
+        <Root level="debug">
+            <!-- 输出设置 -->
+            <AppenderRef ref="stdout"/>
+        </Root>
+    </Loggers>
+</Configuration> 

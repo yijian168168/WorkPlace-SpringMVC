@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
  */
 @Controller
 @RequestMapping("/baseController_Method")
-public class BaseController_Method {
+public class MethodController {
 
 
     /**
